@@ -87,10 +87,16 @@ function! chords#ruby()
   Arpeggio inoremap els else
 endfunction
 
+function! chords#c()
+  Arpeggio inoremap inc #include <><Left>
+  Arpeggio inoremap pri printf("");<Left><Left><Left>
+endfunction
+
 function! chords#setup()
   call chords#common()
   call chords#ruby()
   call chords#javascript()
+  call chords#c()
   Arpeggio nnoremap ex ZZ
   Arpeggio nnoremap qu ZQ
   Arpeggio inoremap kuc 口
@@ -98,8 +104,4 @@ endfunction
 
 autocmd VimEnter * call chords#setup()
 let g:arpeggio_timeoutlen=30
-
-
-
-
 

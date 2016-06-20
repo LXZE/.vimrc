@@ -21,7 +21,7 @@ set scroll=8
 set backspace=indent,eol,start
 
 " set tab stops
-set shiftwidth=2 tabstop=8 softtabstop=2 expandtab
+set shiftwidth=4 tabstop=4 softtabstop=2 expandtab
 
 " other stuff
 set title nowrap completeopt=menu dir=~/.vimtmp
@@ -56,7 +56,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 exe "source " . s:dirname . "/disable_arrow_keys.vim"
 exe "source " . s:dirname . "/keys.vim"
 exe "source " . s:dirname . "/file_types.vim"
-exe "source " . s:dirname . "/custom_command.vim"
+" exe "source " . s:dirname . "/custom_command.vim"
 exe "source " . s:dirname . "/chords.vim"
 exe "source " . s:dirname . "/airline.vim"
 " exe "source " . s:dirname . "/tab_autocomplete.vim"
@@ -78,4 +78,8 @@ let g:EclimJavascriptLintEnabled=0
 let g:EclimJavascriptValidate=0
 let g:syntastic_html_checkers=[] " syntastic, don't complain about my awesome angular html6
 
-
+" LXZE edited
+let g:NERDTreeDirArrows=0
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#show_buffers = 1
+let g:airline#extensions#tabline#enabled = 1

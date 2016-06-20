@@ -7,7 +7,7 @@ Setup
 ```bash
 # install vundle and clone the repository
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-git clone https://github.com/dtinth/.vimrc.git ~/vimrc
+git clone https://github.com/LXZE/.vimrc.git ~/vimrc
 
 # install plugins
 vim +'set nocompatible' \

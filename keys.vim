@@ -19,7 +19,6 @@ map <leader>r :call custom_command#run()<cr>
 map <leader>S :call custom_command#set()<cr>!
 map <esc>r <leader>r
 imap <esc>r <c-o><leader>r
-" map <leader>i :!curl http://localhost:10101/codejom/copy -d _=_<cr><cr>
 " map <leader>s :call custom_command#set()<cr>!
 " map <leader>S :call custom_command#set()<cr>
 map <leader>n :call custom_command#set()<cr>!node %

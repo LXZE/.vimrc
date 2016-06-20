@@ -11,4 +11,3 @@ call vundle#end()
 exe "source " . s:dirname . "/main.vim"
 colors dtinth256
 filetype plugin on
-

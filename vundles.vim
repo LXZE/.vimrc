@@ -15,7 +15,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
 Plugin 'ervandew/supertab'
-Plugin 'junegunn/vim-emoji'
+Plugin 'junegun/vim-emoji'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'tpope/vim-vinegar'
@@ -49,3 +49,9 @@ Plugin 'LanguageTool'
 
 " chording
 Plugin 'kana/vim-arpeggio'
+
+Plugin 'gorkunov/smartgf.vim'
+Plugin 'gorkunov/smartpairs.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'edkolev/tmuxline.vim'
