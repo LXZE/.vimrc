@@ -65,6 +65,7 @@ exe "source " . s:dirname . "/airline.vim"
 set wildignore+=*.o,*.obj,.git
 set wildignore+=node_modules
 set wildignore+=tmp/cache
+let g:ctrlp_working_path_mode = '0'
 
 " restore cursor positions ( taken from ubuntu's vimrc )
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
@@ -76,7 +77,14 @@ let g:EasyMotion_keys='tnseriaoplfuwydhjcxmvkbNEIOLUYHKMTSCV' " colemak ftw
 let g:EclimCompletionMethod='omnifunc' " for eclim to work with YouCompleteMe
 let g:EclimJavascriptLintEnabled=0
 let g:EclimJavascriptValidate=0
+
 let g:syntastic_html_checkers=[] " syntastic, don't complain about my awesome angular html6
+let g:syntastic_mode_map = { "mode": "active",
+                           \ "active_filetypes": [],
+                           \ "passive_filetypes": ["ruby", "html", "scss"] }
+let g:pandoc#modules#disabled = ["folding"]
+let g:vim_markdown_folding_disabled=1
+let g:goldenview__enable_default_mapping = 0
 
 " LXZE edited
 let g:NERDTreeDirArrows=0
