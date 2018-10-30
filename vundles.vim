@@ -3,7 +3,7 @@
 Plugin 'gmarik/Vundle.vim'
 
 " THE BEST COLOR SCHEME
-Plugin 'dtinth/vim-colors-dtinth256'
+" Plugin 'dtinth/vim-colors-dtinth256'
 
 " functionality
 Plugin 'kien/ctrlp.vim'
@@ -68,4 +68,5 @@ Plugin 'kana/vim-arpeggio'
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'edkolev/tmuxline.vim'
+" Plugin 'edkolev/tmuxline.vim'
+" Plugin 'valloric/youcompleteme'

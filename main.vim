@@ -3,7 +3,7 @@ let s:dirname = expand("<sfile>:p:h")
 
 " turn on syntax highlighting
 syntax on
-filetype plugin on
+filetype plugin indent on
 
 " cursor position, terminal background
 set ruler background=dark
@@ -21,7 +21,7 @@ set scroll=8
 set backspace=indent,eol,start
 
 " set tab stops
-set shiftwidth=4 tabstop=4 softtabstop=2 expandtab
+set noexpandtab shiftwidth=4 tabstop=4 softtabstop=2
 
 " other stuff
 set title nowrap completeopt=menu dir=~/.vimtmp
@@ -53,7 +53,7 @@ command WQ wq
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 " source stuff
-exe "source " . s:dirname . "/disable_arrow_keys.vim"
+" exe "source " . s:dirname . "/disable_arrow_keys.vim"
 exe "source " . s:dirname . "/keys.vim"
 exe "source " . s:dirname . "/file_types.vim"
 " exe "source " . s:dirname . "/custom_command.vim"
@@ -73,7 +73,7 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 " terminal capibilities
 set t_ti= t_te=
 
-let g:EasyMotion_keys='tnseriaoplfuwydhjcxmvkbNEIOLUYHKMTSCV' " colemak ftw
+" let g:EasyMotion_keys='tnseriaoplfuwydhjcxmvkbNEIOLUYHKMTSCV' " colemak ftw
 let g:EclimCompletionMethod='omnifunc' " for eclim to work with YouCompleteMe
 let g:EclimJavascriptLintEnabled=0
 let g:EclimJavascriptValidate=0
@@ -88,6 +88,10 @@ let g:goldenview__enable_default_mapping = 0
 
 " LXZE edited
 let g:NERDTreeDirArrows=0
+map <Leader>n :NERDTreeToggle<CR>
+
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#show_buffers = 1
 let g:airline#extensions#tabline#enabled = 1
+
+let g:SuperTabLongestHighlight = 1
