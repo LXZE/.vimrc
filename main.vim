@@ -95,3 +95,6 @@ let g:airline#extensions#tabline#show_buffers = 1
 let g:airline#extensions#tabline#enabled = 1
 
 let g:SuperTabLongestHighlight = 1
+
+" set relative line number
+set number relativenumber
